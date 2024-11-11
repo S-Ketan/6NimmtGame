@@ -1,5 +1,6 @@
 package SechzNimmt;
 
+
 public class Card {
 
 // Internal state

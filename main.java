@@ -3,12 +3,17 @@ package SechzNimmt;
 
 public class main {
     public static void main(String[] args) {
-        Card card1 = new Card(42);
-        card1.printInformation();
-        
+        DeckOfCards myDeck_01 = new DeckOfCards();
+        DeckOfCards myDeck_02 = new DeckOfCards();
 
-        Card card2 = new Card(55);
-        card2.printInformation();
+
+        Card theCard = myDeck_01.getOneCard();
+        theCard.printInformation();
+
+
+        theCard = myDeck_02.getOneCard();
+        theCard.printInformation();
+
         
     }
 }
