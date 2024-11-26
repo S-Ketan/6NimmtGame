@@ -5,7 +5,7 @@ public class Card {
 
 // Internal state
     private int number;
-    private int hornOchs = 1; // Initialize properly
+    private int hornOx = 1; // Initialize properly
 
     // Constructor for the Card class (no return type)
     public Card(int nr) {
@@ -17,26 +17,26 @@ public class Card {
         return number;
     }
 
-    public int getOchsPoints() {
-        // Reinitialize hornOchs based on card number logic
+    public int getOxPoints() {
+        // Reinitialize hornOx based on card number logic
         if (number == 55) {
-            hornOchs = 7;
+            hornOx = 7;
         } else if (number % 10 == 5) {
-            hornOchs = 2;
+            hornOx = 2;
         } else if (number % 10 == 0) {
-            hornOchs = 3;
+            hornOx = 3;
         } else if (number % 11 == 0) {
-            hornOchs = 5;
+            hornOx = 5;
         } else {
-            hornOchs = 1; // Default case
+            hornOx = 1; // Default case
         }
 
-        return hornOchs;
+        return hornOx;
     }
 
     public void printInformation() {
         System.out.println("Number of card: " + number);
-        System.out.println("Horn Ochs points: " + getOchsPoints());
+        System.out.println("Horn Ox points: " + getOxPoints());
     }
 }
 
