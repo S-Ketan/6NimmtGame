@@ -1,6 +1,16 @@
+package SechzNimmt;
+
 import java.util.*;
 
 public class Row {
+
+    // Initialize the cards list
+    private List<Card> cards;
+
+    // Constructor
+    public Row() {
+        this.cards = new ArrayList<>();
+    }
 
     public int numberOfCards() {
         return cards.size();
